@@ -2,16 +2,37 @@
   "name": "dropbox-demo",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node -- --stage 1 --optional strict -- index.js"
+    "start": "nodemon --harmony --exec babel-node -- index.js --dir=./server",
+    "client": "nodemon --harmony --exec babel-node -- client.js"
   },
   "dependencies": {
+    "archiver": "^0.21.0",
+    "babel-cli": "^6.6.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4",
+    "babel-preset-stage-1": "^6.5.0",
     "bluebird-nodeify": "^1.0.0",
+    "co-express": "^1.2.1",
     "express": "^4.0.0",
+    "json-socket": "^0.1.2",
     "mime-types": "^2.0.10",
     "mkdirp": "^0.5.0",
     "morgan": "^1.5.2",
     "rimraf": "^2.3.2",
     "songbird": "^1.0.1",
+    "tar": "^2.2.1",
     "yargs": "^3.8.0"
+  },
+  "babel": {
+    "presets": [
+      "stage-1"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ],
+    "ignore": [
+      "node_modules",
+      "server",
+      "client"
+    ]
   }
 }
