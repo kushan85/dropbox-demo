@@ -34,5 +34,17 @@
       "server",
       "client"
     ]
-  }
+  },
+  "description": "This is a basic Dropbox clone to sync files across multiple remote folders.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushan85/dropbox-demo.git"
+  },
+  "author": "Kushan Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kushan85/dropbox-demo/issues"
+  },
+  "homepage": "https://github.com/kushan85/dropbox-demo#readme"
 }
